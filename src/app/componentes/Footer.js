@@ -9,7 +9,7 @@ export default function footer(){
             <Imagem
              width={100}
              height={100}
-             src={"https://moodles.org/thrmr/moodleorg/pixmoodle_logo_TM.svg"} />
+             src={"https://moodles.org/theme/moodleorg/pix/moodle_logo_TM.svg"} />
              </Link>
         <h1>Footer</h1>
         </nav>

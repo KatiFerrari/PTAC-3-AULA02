@@ -1,9 +1,8 @@
+export default  function Home(){
 
-export default async function Home() {
-
-  return (
+  return(
     <main>
-      <h1>Home</h1>
+      <h1>Hello </h1>
     </main>
   )
 }
