@@ -1,8 +1,20 @@
-export default  function Home(){
 
-  return(
+const url = "https://back-end-ifms-theta.vercel.app/campi";
+
+export default async function Home() {
+
+  const resposta = await fetch(url,{
+    method: 'GET'
+  });
+  const campi = await resposta.json();
+  return (
     <main>
-      <h1>Hello </h1>
+      <h1>Home</h1>
+      {campi.map((campus) =>
+        <div>
+            <p>{campus.nome_campus}</p>
+        </div>
+      )}
     </main>
   )
 }
